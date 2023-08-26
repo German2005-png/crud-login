@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  background-color: #252525;
+}
+.navegation{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #383838;
+  justify-content: center;
+  padding: 10px;
+}
+.flex-nav{
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-between;
+}
+.cont-btn{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-btn{
+  display: flex;
+  padding: 5px 10px;
+  border: 2px solid #222222;
+  cursor: pointer;
+  background-color: #222222;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.nav-btn:hover{
+  transition: all 0.3s ease-in;
+  background-color: #1050ff;
+  border: 2px solid #2761ff;
+  filter: drop-shadow(0px 0px 10px #2761ff);
+}
+.nav-btn:active{
+  background-color: #2760fd;
+  border: 2px solid #4275ff;
+  filter: drop-shadow(0px 0px 10px #4c7cff);
+}
+
+.deep-absolute{
+  width: 100%;
+  background-color:rgba(41, 41, 41, 0.541);
+  height: calc(100vh - 51.9px);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.flex-form{
+  display: flex;
+  margin: auto;
+}
+.form-login{
+  display: flex;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #383838;
+  filter: drop-shadow(0px 0px 10px #000);
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-title{
+  display: flex;  
+}
+.flex-input{
+  display: flex;
+  flex-direction: column;
+}
+.lb-input{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  padding: 10px 0px;
+}
+.flex-input p{
+  display: flex;
+  font-size: 0.8em;
+  color: #ff0000;
+}
+.flex-input p:hover{
+  display: flex;
+  font-size: 0.8em;
+  transition: all 0.3s ease-in;
+  color: #ff7a7a;
+}
+.lb-input input{
+  display: flex;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  padding: 7px;
+  background-color: #222222;
+}
+.lb-input input:hover{
+  transition: all 0.3s ease-in;
+  border: 2px solid #2761ff;
+  filter: drop-shadow(0px 0px 10px #2761ff);
+}
+.form-btn{
+  display: flex;
+  background-color: #1050ff;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  padding: 7px;
+  margin-top: 15px;
+  border: 2px solid #2761ff;
+}
+.form-btn:hover{
+  transition: all 0.3s ease-in;
+  background-color: #2761ff;
+  border: 2px solid #4275ff;
+  filter: drop-shadow(0px 0px 10px #2761ff);
+}
