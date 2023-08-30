@@ -19,6 +19,7 @@ function Navegation(){
       if(document.getElementById("fjc")){
         document.getElementById("flex").innerHTML = `<h1>Hello, ${Cookies.get("username")}</h1>`;
         document.getElementById("drf3").remove()
+        document.getElementById("drf4").remove()
         const logountBnt = document.createElement("li");
         logountBnt.className = 'nav-li-btn';
         const btnLogout = document.createElement("button");
@@ -44,7 +45,7 @@ function Navegation(){
         <h2 className='nav-title'>Welcome to App</h2>
           <ul className='cont-btn' id="fjc">
           <li className='nav-li-btn' id='drf3'><button className='nav-btn' id='nav-btn1' onClick={()=> cambiarEstadoModal(!estadoModal)}>Sign up</button></li>
-          <li className='nav-li-btn' id='drf3'><button className='nav-btn' id='nav-btn2' onClick={()=> cambiarEstadoModal1(!estadoModal1)}>Login</button></li>
+          <li className='nav-li-btn' id='drf4'><button className='nav-btn' id='nav-btn2' onClick={()=> cambiarEstadoModal1(!estadoModal1)}>Login</button></li>
         </ul>
       </div>
     </nav>
