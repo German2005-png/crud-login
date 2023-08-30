@@ -1,7 +1,7 @@
 import axios from 'axios';
 import App from '../App.jsx';
 import Cookies from 'js-cookie';
-const API = 'http://localhost:4000';
+const API = 'https://crud-login-backend.vercel.app';
 export async function apiRequest(user){
     try {
     const response = await axios.post(`${API}/register`, user)
