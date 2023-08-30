@@ -4,9 +4,11 @@ import Cookies from 'js-cookie';
 const API = 'https://crud-login-backend.vercel.app';
 export async function apiRequest(user){
     try {
-    const response = await axios.post(`${API}/register`, user, {headers: {
-        'Content-Type': 'application/json'
-      }})
+    const response = await axios.post(`${API}/register`, user, {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
     const fjwekf = response.data.token;
     console.log(user)
     console.log(response)
@@ -16,6 +18,7 @@ export async function apiRequest(user){
     console.log(fjwekf)
     return fjwekf
     } catch (error) {
+        console.log(user)
         console.error('Error con el SignUp', error)    
     }
 }
